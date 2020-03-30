@@ -153,6 +153,12 @@ a:visited, a:hover, a:focus, a:active {
     color: #3E3EA8;
 }
 
+p {
+    font-size: larger;
+    font-family: "HK Grotesk Web";
+    font-weight: 200;
+}
+
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
@@ -167,6 +173,12 @@ a:visited, a:hover, a:focus, a:active {
     position: relative;
     padding: 24px 24px 0;
     display: flow-root;
+    max-width: 54em;
+    margin: auto;
+}
+.o-row:nth-child(3) {
+    background-color: #F7F7F7;
+    max-width: 100%;
 }
 
 /* size modifiers */
@@ -200,7 +212,7 @@ a:visited, a:hover, a:focus, a:active {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em;
+    max-width: 70.5em;
     /* 90 * 16px = 1440px */
 }
 
@@ -339,6 +351,8 @@ a:visited, a:hover, a:focus, a:active {
 */
 
 .o-section {
+    max-width: 54em;
+    margin: auto;
 }
 
 .o-section + .o-section {
@@ -451,6 +465,24 @@ a:visited, a:hover, a:focus, a:active {
 
     .c-header__nav {
         display: block;
+    }
+}
+
+/*
+    Component: figure
+    ---
+    Special type of figure and figcaption
+*/
+
+.c-figure {
+    transform: scale(20%);
+}
+
+.c-figure__caption {
+}
+
+@media (min-width: 768px) {
+    .c-figure__caption--absolute {        
     }
 }
 
