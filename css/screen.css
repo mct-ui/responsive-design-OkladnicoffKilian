@@ -72,6 +72,7 @@ html {
 
 img {
     max-width: 100%;
+    width: auto;
     vertical-align: top;
 }
 
@@ -167,7 +168,7 @@ a:visited, a:hover, a:focus, a:active {
     position: relative;
     padding: 24px 24px 0;
     display: flow-root;
-    max-width: 54em;
+    max-width: 70.5em;
     margin: auto;
 }
 .o-row--neutral-x-light {
@@ -184,7 +185,7 @@ a:visited, a:hover, a:focus, a:active {
 /* size modifiers */
 
 .o-row--lg {
-    padding: /*48px*/ 0 24px 24px;
+    padding: 48px 24px;
 }
 
 @media (min-width: 768px) {
@@ -227,7 +228,7 @@ a:visited, a:hover, a:focus, a:active {
 .o-layout {
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 }
 
@@ -405,6 +406,7 @@ a:visited, a:hover, a:focus, a:active {
 .c-nav__link {
     display: block;
     text-decoration: none;
+    list-style: none;
     font-weight: 400;
     padding: 8px 0;
 }
@@ -435,6 +437,7 @@ a:visited, a:hover, a:focus, a:active {
 
 .c-nav__link--meta, .c-nav__link--meta:visited, .c-nav__link--meta:active {
     color: #6c6c75;
+    text-decoration: none;
 }
 
 .c-nav__link--meta:hover, .c-nav__link--meta:focus {
@@ -621,6 +624,54 @@ a:visited, a:hover, a:focus, a:active {
 
 .c-link-cta--inverse:hover::after {
     background-color: #fff;
+}
+
+
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-footer__logo {
+    flex-basis: 100%;
+}
+
+.c-footer__nav {
+    flex-basis: calc(100% / 2);
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+        flex-wrap: wrap;
+        align-items: center !important;
+    }
+
+    .c-footer__logo {
+        flex-basis: 100%;
+    }
+
+    .c-footer__nav {
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+    }
+
+    .c-footer__logo {
+    }
+
+    .c-footer__logo .c-logo {
+    }
+
+    .c-footer__nav {
+    }
 }
 
 
@@ -988,7 +1039,7 @@ a:visited, a:hover, a:focus, a:active {
         font-weight: 200;
     }
     .o-container {
-        max-width: 50em;
+        max-width: 90;
         margin: auto;
     }
 }
